@@ -176,7 +176,10 @@ body {
     display: none;
   }
   #nav .menu {
-    display: none;
+    display: initial;
+    font-size: 25px;
+    font-weight: 700;
+    padding-left: 80px;
   }
 
   #left_center {
