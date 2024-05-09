@@ -15,9 +15,12 @@
   src: url(./assets/fonts/AlfaSlabOne.ttf);
 }
 body {
+  height: 100%;
+  width: 100%;
   overflow-x: hidden;
   background-color: black;
 }
+
 #home {
   height: 90.3vh;
 }
@@ -27,6 +30,13 @@ body {
 .content {
   width: 95vw !important;
 }
+.nav_options:hover {
+  color: #7ed957;
+}
+.nav_options:active,
+.nav_options:focus {
+  color: #7ed957;
+}
 #tagline-container {
   height: 88vh;
   width: 95vw;
@@ -34,7 +44,7 @@ body {
   display: flex;
   align-items: center;
   display: block;
-  margin-top: 80px;
+  padding-top: 90px;
   /* justify-content: center; */
 }
 .tagline {
@@ -90,7 +100,7 @@ body {
 
 #background-text {
   position: absolute;
-  margin-top: -230px;
+  margin-top: -220px;
   z-index: -1;
   font-size: 17vw;
   padding-top: 5vh;
@@ -108,6 +118,7 @@ body {
 }
 #about {
   height: auto;
+  width: 100vw;
 }
 .heading-container {
   height: 10vh;
@@ -128,7 +139,8 @@ body {
   font-size: 100px;
   font-family: "TitilliumWeb-Black";
   letter-spacing: 5px;
-  color: rgba(255, 255, 255, 0.1);
+  /* color: rgba(255, 255, 255, 0.1); */
+  color: rgba(255, 255, 255, 0.123);
 }
 .image {
   width: 20vw;
@@ -144,11 +156,67 @@ body {
 .name {
   color: #7ed957;
 }
+.link {
+  -webkit-animation: roll_icon 1s;
+  animation: roll_icon 1s;
+}
 .link:hover {
   color: #7ed957;
   cursor: pointer;
+  -webkit-animation: roll 1s;
+  animation: roll 1s;
+}
+@-webkit-keyframes roll {
+  from {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
 .box-border:hover {
   border-color: #7ed957;
   cursor: pointer;
+}
+.skills_text {
+    /* color: white; */
+  color: #7ed957;
+  font-family: "lliumWeb-Regular";
+}
+.skill_options {
+  /* color: #7ed957; */
+  display: inline-block;
+}
+/* .skill_options svg{
+    fill: #7ed957;
+} */
+
+#contact{
+  background-color: #7ed957;
+}
+.contact_heading{
+  font-family: "lliumWeb-Regular";
+}
+.contact_message{
+  display: flex;
+  flex-direction: column;
+  box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+.contact_message button{
+  align-self: center;
+}
+.contact_message textarea{
+  background-color: #62994b41;
+  min-width: 400px;
+  max-width: 400px;
+  min-height: 140px;
+  max-height: 140px;
+}
+.contact_inputs:focus{
+  background-color: #62994b41;
 }
