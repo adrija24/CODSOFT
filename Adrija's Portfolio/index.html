@@ -18,7 +18,7 @@
 <body>
 
     <div>
-        <nav class="bg-dark white">
+        <nav class="bg-black white fixed w-full z-20 top-0 start-0">
             <div class="max-w-7xl mx-auto px-8 flex">
                 <a class="flex-shrink-0 logo" href="/">
                     <img class="h-16 w-12" src="/assets/image/logo.png" alt="Workflow" />
@@ -91,7 +91,7 @@
         </nav>
     </div>
 
-    <div id="home" class="container-fluid">
+    <div id="home" class="container-fluid h-auto w-100% mt-20">
         <div id="tagline-container">
             <p class="tagline">I'm a<br><span id=sub-tagline>WEB DESIGNER<span id="end-line">.</span></span><br></p>
             <div class=" buttons">
@@ -190,7 +190,7 @@
 
     </div>
 
-    <div id="skills" class="mt-12 pt-12">
+    <div id="skills" class="mt-12 pt-12 h-auto w-100%">
         <div class="heading-container">
             <div class="heading">
                 Skills
@@ -251,7 +251,7 @@
         </div>
     </div>
 
-    <div id="projects" class="mt-12 pt-12">
+    <div id="projects" class="mt-12 pb-16 pt-12 h-auto w-100%">
         <div class="heading-container">
             <div class="heading">
                 Projects
@@ -287,14 +287,12 @@
         </div>
     </div>
 
-    <div id="contact" class="mt-12">
+    <!-- <div id="contact" class="h-auto w-100%">
         <div class="heading-container pt-3">
             <div class="contact_heading text-black text-6xl">
                 Get in touch
             </div>
-            <!-- <div class="pt-10 heading-background">
-                Get in touch
-            </div> -->
+            
         </div>
         <div class="flex justify-center pt-4 pb-6">
             <div class="flex justify-center rounded-md h-auto w-auto">
@@ -310,19 +308,37 @@
                         <textarea name="message" class="contact_inputs m-2 p-1 bg-inherit border-b-2 white outline-none focus:border-2 white" required></textarea>
                         <button type="submit" class="m-2 w-20 border-2 border-black">Submit</button>
                     </form>
-                    <!-- <h2>Name:</h2>
-                    <label class="name"><input type="text"></label>
-                    <h2>Phone No:</h2>
-                    <label class="ph_no"><input type="number"></label>
-                    <h2>Email:</h2>
-                    <label class="mail"><input type="email"></label>
-                    <h2>Message:</h2>
-                    <label class="message"><input type="text"></label>
-                    <button>submit</button> -->
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <div id="contact" class="h-auto w-100%">
+        <div class="heading-container pt-3">
+            <div class="heading text-6xl">
+                Get in touch
+            </div>
+        </div>
+        <div class="flex justify-center pt-4 pb-6">
+            <div class="flex justify-center rounded-md h-auto w-auto">
+                <div class="items-center ">
+                    <form action="" class="contact_message p-4 m-4">
+                        <h2 class="contact_text ml-2 text-white">Name:</h2>
+                        <input type="text" name="name" class="contact_inputs h-10 w-96 m-2 p-1 text-white bg-inherit border-b-2 white outline-none focus:bg-zinc-800 focus:border-2 white" required>
+                        <h2 class="ml-2 pt-2 text-white">Phone No:</h2>
+                        <input type="number" name="ph_no" class="contact_inputs h-10 w-96 m-2 p-1 text-white bg-inherit border-b-2 white outline-none focus:bg-zinc-800 focus:border-2 white" required>
+                        <h2 class="ml-2 pt-2 text-white">Email:</h2>
+                        <input type="email" name="mail" class="contact_inputs h-10 w-96 m-2 p-1 text-white bg-inherit border-b-2 white outline-none focus:bg-zinc-800 focus:border-2 white" required>
+                        <h2 class="ml-2 pt-2 text-white">Message:</h2>
+                        <textarea name="message" class="contact_inputs text-white m-2 p-1 text-white bg-inherit border-b-2 white outline-none focus:bg-zinc-800 focus:border-2 white" required></textarea>
+                        <button type="submit" class="m-2 w-20 border-2 border-white text-white">Submit</button>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
+
+
 </body>
 
 </html>
