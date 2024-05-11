@@ -2,12 +2,14 @@
 
 <head>
     <title>Portfolio</title>
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="/syle.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
-    <!-- tailwind -->
-    <script src="https://cdn.tailwindcss.com"></script>
     <!-- font-awesome -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
     <!-- remixicon(icon) -->
@@ -18,80 +20,119 @@
 <body>
 
     <div>
-        <nav class="bg-black white fixed w-full z-20 top-0 start-0">
-            <div class="max-w-7xl mx-auto px-8 flex">
-                <a class="flex-shrink-0 logo" href="/">
-                    <img class="h-16 w-12" src="/assets/image/Adrija.png" alt="Workflow" />
+        <!-- <nav
+            class="bg-black fixed w-full z-20 top-0 start-0 border-b border-gray-200">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-around mx-auto p-4">
+                <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <img src="/assets/image/Adrija.png" class="h-8" alt="Flowbite Logo">
                 </a>
-                <div class="flex items-center justify-center h-16 content">
-                    <div class="flex items-center justify-center">
-                        <div class="justify-between">
-                            <div class="hidden md:block flex items-center">
-                                <div class="ml-10 flex items-baseline space-x-4">
-                                    <a class="nav_options text-gray-300 px-3 py-2 rounded-md text-lg font-medium"
-                                        href="#">
-                                        Home
-                                    </a>
-                                    <a class="nav_options text-gray-300 px-3 py-2 rounded-md text-lg font-medium"
-                                        href="#about">
-                                        About
-                                    </a>
-                                    <a class="nav_options text-gray-300 px-3 py-2 rounded-md text-lg font-medium"
-                                        href="#skills">
-                                        Skills
-                                    </a>
-                                    <a class="nav_options text-gray-300 px-3 py-2 rounded-md text-lg font-medium"
-                                        href="#projects">
-                                        Projects
-                                    </a>
-                                    <a class="nav_options text-gray-300 px-3 py-2 rounded-md text-lg font-medium"
-                                        href="#contact">
-                                        Contact
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="block">
-                        <div class="ml-4 flex items-center md:ml-6">
-                        </div>
-                    </div>
-                    <div class="-mr-2 flex md:hidden">
-                        <button
-                            class="text-gray-800 dark:text-white hover:text-gray-300 inline-flex items-center justify-center p-2 rounded-md focus:outline-none">
-                            <svg width="20" height="20" fill="currentColor" class="h-8 w-8" viewBox="0 0 1792 1792"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M1664 1344v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45z">
-                                </path>
-                            </svg>
-                        </button>
-                    </div>
+                <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                    <button data-collapse-toggle="navbar-sticky" type="button"
+                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                        aria-controls="navbar-sticky" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 17 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 1h15M1 7h15M1 13h15" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                    <ul
+                        class="flex flex-col p-4 md:p-0 mt-4 font-medium border md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-black">
+                        <li>
+                            <a href="#home"
+                                class="nav_options block py-2 px-3 text-white md:bg-transparent md:p-0"
+                                aria-current="page">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about"
+                                class="nav_options text-white block py-2 px-3 md:p-0 ">About</a>
+                        </li>
+                        <li>
+                            <a href="#skills"
+                                class="nav_options text-white block py-2 px-3 md:p-0">Skills</a>
+                        </li>
+                        <li>
+                            <a href="#projects"
+                                class="nav_options text-white block py-2 px-3 md:p-0">Projects</a>
+                        </li>
+                        <li>
+                            <a href="#contact"
+                                class="nav_options text-white block py-2 px-3 md:p-0">Contact</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="md:hidden">
-                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                    <a class="text-gray-300 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                        href="/#">
-                        Home
-                    </a>
-                    <a class="text-gray-800 dark:text-white block px-3 py-2 rounded-md text-base font-medium" href="/#">
-                        Gallery
-                    </a>
-                    <a class="text-gray-300 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                        href="/#">
-                        Content
-                    </a>
-                    <a class="text-gray-300 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                        href="/#">
-                        Contact
-                    </a>
+        </nav> -->
+
+        <nav class="bg-black border-gray-200 py-2.5 dark:bg-gray-900">
+            <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
+                <a href="#" class="flex items-center">
+                    <img src="https://www.svgrepo.com/show/499962/music.svg" class="h-6 mr-3 sm:h-9"
+                        alt="Landwind Logo">
+                    <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Landwind</span>
+                </a>
+                <div class="flex items-center lg:order-2">
+                    <div class="hidden mt-2 mr-4 sm:inline-block">
+                        <span></span>
+                    </div>
+
+                    <a href="https://themesberg.com/product/tailwind-css/landing-page"
+                        class="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800">Download</a>
+                    <button data-collapse-toggle="mobile-menu-2" type="button"
+                        class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                        aria-controls="mobile-menu-2" aria-expanded="true">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="items-center justify-between w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
+                    <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 text-white bg-purple-700 rounded lg:bg-transparent lg:text-purple-700 lg:p-0 dark:text-white"
+                                aria-current="page">Home</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Company</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Marketplace</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Features</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Team</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
+
     </div>
 
-    <div id="home" class="container-fluid h-auto w-100% mt-20">
+    <div id="home" class="container-fluid h-auto w-100% mt-2">
         <div id="tagline-container">
             <p class="tagline">I'm a<br><span id=sub-tagline>WEB DESIGNER<span id="end-line">.</span></span><br></p>
             <div class=" buttons">
@@ -202,10 +243,10 @@
             <div class="skill_top flex justify-around">
                 <div class="lan_container1">
                     <h3 class="skill_heading text-white text-2xl font-bold py-2">Languages:</h3>
-                    <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="26px" height="26px" viewBox="0 0 15 15" >
+                    <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="26px" height="26px" viewBox="0 0 15 15">
                             <path fill="currentColor" fill-rule="evenodd"
                                 d="M7.5.421L14 4.213v6.574L7.5 14.58L1 10.787V4.213zM7.5 4a3.5 3.5 0 1 0 0 7h.182c.976 0 1.913-.388 2.604-1.078l.068-.068l-.708-.708l-.068.068A2.682 2.682 0 0 1 7.682 10H7.5a2.5 2.5 0 0 1 0-5h.182c.711 0 1.393.283 1.896.786l.068.068l.708-.708l-.068-.068A3.682 3.682 0 0 0 7.682 4z"
-                                clip-rule="evenodd" class="skill_options"/>
+                                clip-rule="evenodd" class="skill_options" />
                         </svg></a>
 
                     <a href="https://www.python.org/"><svg xmlns="http://www.w3.org/2000/svg" width="26px" height="26px"
@@ -261,8 +302,8 @@
                 </div>
                 <div class="lan_container2">
                     <h3 class="skill_heading text-white text-2xl font-bold py-2">Library/Framework:</h3>
-                    <a href="https://getbootstrap.com/"><svg xmlns="http://www.w3.org/2000/svg" width="26px" height="26px"
-                            viewBox="0 0 24 24">
+                    <a href="https://getbootstrap.com/"><svg xmlns="http://www.w3.org/2000/svg" width="26px"
+                            height="26px" viewBox="0 0 24 24">
                             <path fill="currentColor"
                                 d="M5.423 3.038c-1.284 0-2.233 1.124-2.19 2.342c.04 1.171-.013 2.688-.395 3.924c-.383 1.24-1.03 2.026-2.088 2.127v1.138c1.058.101 1.705.887 2.088 2.127c.382 1.237.435 2.753.394 3.924c-.042 1.218.907 2.342 2.192 2.342h13.154c1.284 0 2.234-1.124 2.192-2.342c-.041-1.171.012-2.687.393-3.924c.384-1.24 1.03-2.026 2.087-2.127v-1.138c-1.058-.101-1.703-.887-2.087-2.127c-.381-1.236-.434-2.753-.393-3.924c.042-1.218-.908-2.342-2.192-2.342zm10.581 11.033c0 1.678-1.251 2.696-3.328 2.696H9.14a.381.381 0 0 1-.382-.381V7.614a.381.381 0 0 1 .382-.38h3.515c1.732 0 2.869.937 2.869 2.378c0 1.01-.765 1.916-1.739 2.074v.053c1.326.145 2.22 1.064 2.22 2.332M12.29 8.442h-2.016v2.848h1.698c1.313 0 2.036-.529 2.036-1.474c0-.885-.622-1.374-1.718-1.374m-2.016 3.977v3.139h2.09c1.367 0 2.09-.549 2.09-1.58c0-1.03-.743-1.559-2.178-1.559z"
                                 class="skill_options" />
@@ -356,7 +397,8 @@
 
                     <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="26px" height="26px" viewBox="0 0 24 24">
                             <path fill="currentColor"
-                                d="m10.614 17.796l.878-2.01a7.742 7.742 0 0 1 3.94-3.992l2.416-1.072c.768-.341.768-1.458 0-1.8l-2.34-1.038a7.747 7.747 0 0 1-3.997-4.125l-.89-2.142a.946.946 0 0 0-1.758 0l-.889 2.142a7.747 7.747 0 0 1-3.997 4.125l-2.34 1.039c-.768.34-.768 1.458 0 1.799l2.415 1.072a7.742 7.742 0 0 1 3.94 3.991l.878 2.01a.946.946 0 0 0 1.744 0m8.787 4.894l.247-.566a4.365 4.365 0 0 1 2.221-2.25l.76-.339a.53.53 0 0 0 0-.963l-.717-.319a4.368 4.368 0 0 1-2.253-2.326l-.254-.611a.507.507 0 0 0-.942 0l-.254.61a4.368 4.368 0 0 1-2.253 2.327l-.718.32a.53.53 0 0 0 0 .962l.76.338a4.365 4.365 0 0 1 2.222 2.251l.247.566c.18.414.754.414.934 0" class="skill_options" />
+                                d="m10.614 17.796l.878-2.01a7.742 7.742 0 0 1 3.94-3.992l2.416-1.072c.768-.341.768-1.458 0-1.8l-2.34-1.038a7.747 7.747 0 0 1-3.997-4.125l-.89-2.142a.946.946 0 0 0-1.758 0l-.889 2.142a7.747 7.747 0 0 1-3.997 4.125l-2.34 1.039c-.768.34-.768 1.458 0 1.799l2.415 1.072a7.742 7.742 0 0 1 3.94 3.991l.878 2.01a.946.946 0 0 0 1.744 0m8.787 4.894l.247-.566a4.365 4.365 0 0 1 2.221-2.25l.76-.339a.53.53 0 0 0 0-.963l-.717-.319a4.368 4.368 0 0 1-2.253-2.326l-.254-.611a.507.507 0 0 0-.942 0l-.254.61a4.368 4.368 0 0 1-2.253 2.327l-.718.32a.53.53 0 0 0 0 .962l.76.338a4.365 4.365 0 0 1 2.222 2.251l.247.566c.18.414.754.414.934 0"
+                                class="skill_options" />
                         </svg></a>
                 </div>
             </div>
@@ -376,25 +418,25 @@
                 Projects
             </div>
         </div>
-        <div class="project_container flex justify-around">
-            <div class="project_left pt-20">
+        <div class="project_container">
+            <div class="project_left pt-20 pl-6 flex items-center">
                 <a href="https://youthofbengal.org/">
-                    <img class="project_images pl-14 py-2 h-72" src="./assets/image/yob project.jpg">
+                    <img class="project_images pl-14 py-6 h-96" src="./assets/image/yob project.jpg">
                 </a>
-                <a href="https://typinghub.netlify.app/">
-                    <img class="pl-14 py-6 h-2/4" src="./assets/image/typing hub project.jpg">
-                </a>
-            </div>
-
-            <div class="project_right py-20 pl-6">
-                <a href="https://youthofbengal.org/" class="">
-                    <p class="text-white w-3/4 pl-14">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+                <a href="https://youthofbengal.org/" class="project_text">
+                    <p class="text-black font-bold px-10">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Dolores
                         iusto eum nobis maiores, nulla voluptatem quia saepe exercitationem sed sunt ex illo quidem
                         laboriosam porro? Reprehenderit blanditiis modi fuga tempore sapiente magnam cupiditate quo
                         corporis quidem dolor ipsa aliquam amet non, libero alias aperiam? Pariatur?</p>
                 </a>
+            </div>
+            <div class="project_right pt-5 pb-20 pl-6 flex items-center">
                 <a href="https://typinghub.netlify.app/">
-                    <p class="text-white w-3/4 pl-14">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <img class="project_images pl-14 py-6 h-96" src="./assets/image/typing hub project.jpg">
+                </a>
+                <a href="https://typinghub.netlify.app/" class="project_text">
+                    <p class="text-black font-bold px-10">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Reiciendis unde similique iste dolore quis, tenetur voluptatum molestiae tempore eius eos,
                         inventore sunt. Nobis distinctio omnis itaque eius non eligendi, dolore eveniet atque molestias
                         necessitatibus earum id amet dolorum repellat ab vitae modi quis, tempore labore.</p>
@@ -415,7 +457,7 @@
         <div class="flex justify-center pt-12 pb-6">
             <div class="flex justify-center rounded-md h-auto w-auto">
                 <div class="items-center ">
-                    <form action="" class="contact_message p-4 m-4">
+                    <!-- <form action="" class="contact_message p-4 m-4">
                         <h2 class="contact_text ml-2 text-white">Name:</h2>
                         <input type="text" name="name"
                             class="contact_inputs h-10 w-96 m-2 p-1 text-white bg-inherit border-b-2 white outline-none focus:bg-zinc-800 focus:border-2 white"
@@ -433,6 +475,21 @@
                             class="contact_inputs text-white m-2 p-1 text-white bg-inherit border-b-2 white outline-none focus:bg-zinc-800 focus:border-2 white"
                             required></textarea>
                         <button type="submit" class="m-2 w-20 border-2 border-white text-white">Submit</button>
+                    </form> -->
+
+                    <form class="ContactForm" method="POST">
+                        <label for="contactName">Name:</label>
+                        <input title="Name" type="text" name="Name" required="" autocomplete="on" id="contactName"
+                            value="">
+                        <label for="contactNumber">Phone No:</label>
+                        <input title="Phone" type="number" name="Phone" autocomplete="on" id="contactNumber">
+                        <label for="contactEmail">Email:</label>
+                        <input title="Email" type="email" name="Email" required="" autocomplete="on" id="contactEmail"
+                            value="">
+                        <label class="message" for="contactMessage">Message:</label>
+                        <h4>Hello Adrija,</h4>
+                        <textarea title="Message" name="Message" required="" id="contactMessage"></textarea>
+                        <button id="subBtn" type="submit" disabled="">Send Message</button>
                     </form>
                 </div>
             </div>
