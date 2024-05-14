@@ -32,22 +32,16 @@ body {
 .logo {
   width: 8vw !important;
 }
-.content {
-  width: 95vw !important;
+.section_view{
+  scroll-margin-top: 66px;
 }
-.nav_options::after{
-  content: "";
-  height: 2px;
-  width: 100%;
-  background: #e1684d;
-  display: block;
-  opacity: 0;
+
+.home_view{
+  scroll-margin-top: 80px;
 }
+
 .nav_options:hover{
   color: #e1684d !important;
-}
-.nav_options:hover::after{
-  opacity: 1;
 }
 
 .nav_options:active,
@@ -215,22 +209,26 @@ body {
 .skills_container a {
   display: inline-block;
 }
+.skill_options > svg *,
 .skill_options {
   /* fill: #e1684d; */
   fill: rgba(255, 255, 255, 0.295);
+  margin: 3px;
 }
+.skill_options:hover > svg *,
 .skill_options:hover {
   fill: #e1684d;
 }
 #projects {
   background-color: rgba(255, 255, 255, 0.082);
 }
-#contact {
-  /* background-color: #e1684d; */
-  /* background-color: rgba(255, 255, 255, 0.082); */
+.project_image_section{
+  /* position: relative; */
+  padding-right: 500px;
 }
-.contact_heading {
-  font-family: "lliumWeb-Regular";
+.project_link_section{
+  left: 53%;
+  z-index: 2;
 }
 .project_images{
   opacity: 0.5;
@@ -240,23 +238,49 @@ body {
 }
 .project_text{
   background-color: rgb(161, 158, 158);
-  position: absolute;
-  left: 52%;
-  width: 600px;
+  /* position: absolute;
+  left: 52%; */
+  width: 500px;
   height: auto;
-  margin-left: 5px;
+  margin-left: 25px;
+}
+
+.project_title{
+  color: #e1684d;
+  text-align: right;
+  font-weight: 700;
+  font-size: 30px;
+  padding-bottom: 15px;
+}
+.project_tech_list{
+  color: #e1684d;
+  gap: 27px;
+  justify-content: end;
+  padding-top: 10px;
+  font-size: 13px;
+}
+.project_links{
+  display: flex;
+  justify-content: end;
+  padding-top: 5px;
+  gap: 15px;
+}
+.contact_heading {
+  font-family: "lliumWeb-Regular";
 }
 .ContactForm {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(to bottom left, #f38369, #f5a492);
-  /* background: linear-gradient(to bottom, #09356e81, #083979); */
+  /* background: linear-gradient(to bottom left, #f38369, #f5a492); */
+  /* background: linear-gradient(to bottom, #71717281, #4f4f50); */
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(30px);
   padding: 10px 25px 24px;
   border-radius: 4px;
-  box-shadow: 0 5px 30px -16px #0000008c;
+  /* box-shadow: 0 5px 30px -16px #0000008c; */
   position: relative;
-  top: 70px;
+  top: 40px;
   z-index: 1;
   margin-bottom: 80px;
 }
@@ -271,22 +295,28 @@ body {
 .ContactForm input {
   height: 35px;
   width: 370px;
-  background: 0 0;
-  border-bottom: 1px solid rgba(100, 255, 219, .8);
+  background: none;
+  border: none;
+  outline: none;
+  /* border-bottom: 1px solid rgba(100, 255, 219, .8); */
+  border-bottom: 1px solid #fff;
   padding-left: 0;
-  transition: .2s;
+  transition: 0.3s;
   border-radius: 2px 2px 0 0;
+}
+.ContactForm input::placeholder{
+  color: #fff;
 }
 .ContactForm input:focus{
   height: 35px;
   width: 370px;
+  background: #36363693;
   /* border-radius: 3px; */
   border: none;
-  margin-bottom: 15px;
-  /* padding-left: 10px; */
-  font-size: 18px;
+  font-size: 15px;
   /* background: #2c6bb393; */
   color: #fff;
+  transition: 0.3s;
   box-shadow: 0 5px 30px -25px #000;
 }
 input, textarea {
@@ -302,39 +332,43 @@ input, textarea, button, select, a {
 }
 .ContactForm h4 {
   width: 100%;
-  background: #1f549193;
+  background: #36363693;
   padding: 5px 10px;
   color: #ffffffd2;
   border-radius: 3px 3px 0 0;
-  /* margin-top: 8px; */
   margin: 0 0 10px 0;
   font-weight: 600;
   cursor: default;
 }
 
+.ContactForm textarea {
+  height: 80px;
+  min-height: 100px;
+  height: fit-content;
+  width: 370px;
+  resize: none;
+  border-radius: 3px;
+  border: none;
+  margin-bottom: 15px;
+  padding-left: 10px;
+  font-size: 10px;
+  background: transparent;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  box-shadow: 0 5px 30px -25px #000;
+}
 .ContactForm textarea:focus,.ContactForm textarea:active{
   height: 80px;
   padding-top: 8px;
-  font-size: 16px;
+  font-size: 15px;
   resize: none;
   font-family: Overpass, Verdana, Geneva, Tahoma, sans-serif;
   height: fit-content;
   min-height: 100px;
   border-radius: 0 0 3px 3px;
-  border: 1px solid transparent;
-  transition: .2s;
-}
-.ContactForm textarea {
-  /* height: 35px; */
-  width: 370px;
-  border-radius: 3px;
-  border: none;
-  margin-bottom: 15px;
-  padding-left: 10px;
-  font-size: 18px;
-  background: #2c6bb393;
-  color: #fff;
-  box-shadow: 0 5px 30px -25px #000;
+  /* border: 1px solid white; */
+  transition: .3s;
+  background: #36363693;
 }
 textarea {
   border-radius: 0;
@@ -348,7 +382,7 @@ input, textarea, button, select, a {
   pointer-events: none;
 }
 .ContactForm button {
-  border: 1px solid #64ffda;
+  border: 1px solid #fff;
   color: #fff;
   border-radius: 4px;
   font-family: Overpass Mono, Verdana, Geneva, Tahoma, sans-serif;
