@@ -1,0 +1,84 @@
+@font-face {
+    font-family: "TitilliumWeb-Black";
+    src: url(./assets/fonts/TitilliumWeb-Black.ttf);
+  }
+  @font-face {
+    font-family: "TitilliumWeb-Bold";
+    src: url(./assets/fonts/TitilliumWeb-Bold.ttf);
+  }
+  @font-face {
+    font-family: "TitilliumWeb-Regular";
+    src: url(./assets/fonts/TitilliumWeb-Regular.ttf);
+  }
+  @font-face {
+    font-family: "AlfaSlabOne";
+    src: url(./assets/fonts/AlfaSlabOne.ttf);
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+  }
+  body {
+    overflow-x: hidden;
+    background-color: black;
+  }
+  
+  .logo {
+    width: 8vw !important;
+  }
+  .nav_options:hover {
+    color: #e1684d !important;
+  }
+  
+  .nav_options:active,
+  .nav_options:focus {
+    color: #e1684d !important;
+  }
+
+  .link {
+    -webkit-animation: roll_icon 1s;
+    animation: roll_icon 1s;
+  }
+  .link:hover {
+    color: #e1684d;
+    cursor: pointer;
+    -webkit-animation: roll 1s;
+    animation: roll 1s;
+  }
+  @-webkit-keyframes roll {
+    from {
+      -webkit-transform: rotate(0);
+      transform: rotate(0);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  .button-link {
+    display: flex;
+    place-items: center;
+    text-decoration: none;
+    color: rgb(179, 176, 176);
+    width: -moz-fit-content;
+    width: fit-content;
+    border: 1px solid rgb(150, 148, 148);
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px 40px;
+    background: #0000;
+    margin-top: 10px;
+    /* transition: all 0.2s ease-out; */
+    padding: 12px 20px;
+  }
+  .button-link:hover {
+    background: #8583832a;
+  }
+  
