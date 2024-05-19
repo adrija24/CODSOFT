@@ -21,7 +21,7 @@
 }
 html,
 body {
-  height: 100%;
+  height: 100vh;
   width: 100%;
 }
 body {
@@ -160,7 +160,6 @@ body {
   font-size: 100px;
   font-family: "TitilliumWeb-Black";
   letter-spacing: 5px;
-  /* color: rgba(255, 255, 255, 0.1); */
   color: rgba(255, 255, 255, 0.123);
 }
 .image {
@@ -202,7 +201,6 @@ body {
   cursor: pointer;
 }
 .skills_text {
-  /* color: white; */
   color: #e1684d;
   font-family: "lliumWeb-Regular";
 }
@@ -211,7 +209,6 @@ body {
 }
 .skill_options > svg *,
 .skill_options {
-  /* fill: #e1684d; */
   fill: rgba(255, 255, 255, 0.295);
   margin: 3px;
 }
@@ -221,10 +218,8 @@ body {
 }
 #projects {
   background-color: rgba(255, 255, 255, 0.082);
-  /* background-color: #31313170; */
 }
 .project_image_section{
-  /* position: relative; */
   padding-right: 500px;
 }
 .project_link_section{
@@ -238,10 +233,7 @@ body {
   opacity: 1;
 }
 .project_text{
-  /* background-color: rgb(161, 158, 158); */
   background-color: #585858;
-  /* background-color: #858383; */
-  /* box-shadow: 0 10px 30px -15px rgba(187, 195, 202, 0.7); */
   color: white;
   width: 500px;
   height: auto;
@@ -278,13 +270,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* background: linear-gradient(to bottom left, #f38369, #f5a492); */
-  /* background: linear-gradient(to bottom, #71717281, #4f4f50); */
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(30px);
   padding: 10px 25px 24px;
   border-radius: 4px;
-  /* box-shadow: 0 5px 30px -16px #0000008c; */
   position: relative;
   top: 40px;
   z-index: 1;
@@ -305,7 +294,6 @@ body {
   border: none;
   outline: none;
   color: #fff;
-  /* border-bottom: 1px solid rgba(100, 255, 219, .8); */
   border-bottom: 1px solid #fff;
   padding-left: 0;
   transition: 0.3s;
@@ -316,10 +304,8 @@ body {
   height: 35px;
   width: 370px;
   background: #36363693;
-  /* border-radius: 3px; */
   border: none;
   font-size: 15px;
-  /* background: #2c6bb393; */
   color: #fff;
   transition: 0.3s;
   box-shadow: 0 5px 30px -25px #000;
@@ -356,7 +342,6 @@ input, textarea, button, select, a {
   border: none;
   margin-bottom: 15px;
   padding-left: 10px;
-  /* font-size: 10px; */
   background: transparent;
   color: #fff;
   border-bottom: 1px solid #fff;
@@ -367,11 +352,9 @@ input, textarea, button, select, a {
   padding-top: 8px;
   font-size: 15px;
   resize: none;
-  /* font-family: Overpass, Verdana, Geneva, Tahoma, sans-serif; */
   height: fit-content;
   min-height: 100px;
   border-radius: 0 0 3px 3px;
-  /* border: 1px solid white; */
   transition: .3s;
   background: #36363693;
 }
@@ -390,7 +373,6 @@ input, textarea, button, select, a {
   border: 1px solid #fff;
   color: #fff;
   border-radius: 4px;
-  /* font-family: Overpass Mono, Verdana, Geneva, Tahoma, sans-serif; */
   font-size: 16px;
   cursor: pointer;
   padding: 10px 40px;
@@ -409,3 +391,49 @@ footer {
   font-family: "lliumWeb-Regular";
   color: white;
 }
+
+@media (max-width: 1190px){
+  .project_link_section{
+    left: 51%;
+  }
+}
+@media (max-width: 1140px){
+  #background-text{
+    font-size: 16vw;
+  }
+  .project_link_section{
+    left: 49%;
+  }
+}
+@media (max-width: 1120px){
+  .project_link_section{
+    left: 48%;
+  }
+}
+@media (max-width: 1065px){
+  .project_link_section{
+    left: 45%;
+  }
+}
+@media (max-width: 1040px){
+  .project_link_section{
+    left: 44%;
+  }
+  #tagline-container{
+    height:100vh !important;
+  }
+}
+@media (max-width: 1020px){
+  .project_link_section{
+    left: 42%;
+  }
+}
+@media (max-width: 400px){
+  /* #tagline-container{
+    height:40vh !important;
+  } */
+  #background-text{
+    font-size: 10vw !important;
+  }
+}
+
